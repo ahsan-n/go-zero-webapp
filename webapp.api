@@ -1,0 +1,18 @@
+syntax = "v1"
+
+info(
+    title: "Get User Details API"
+    version: "1.0.0"
+)
+
+type UserDetails {
+    Name     string  `json:"name"`
+    Age      int32   `json:"age"`
+    Semester int32   `json:"semester"`
+    CGPA     float64 `json:"cgpa"`
+}
+
+service user-api {
+    @handler getUserDetails
+    get /getUserDetails() returns (UserDetails)
+}

@@ -5,6 +5,10 @@ info (
 	version: "1.0.0"
 )
 
+type Request {
+	id int64 `path:"id"`
+}
+
 type UserDetails {
 	Name     string  `json:"name"`
 	Age      int32   `json:"age"`
@@ -14,6 +18,6 @@ type UserDetails {
 
 service user-api {
 	@handler getUserDetails
-	get /getUserDetails returns (UserDetails)
+	get /getUserDetails/:id (Request) returns (UserDetails)
 }
 

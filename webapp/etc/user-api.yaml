@@ -1,3 +1,5 @@
 Name: user-api
 Host: 0.0.0.0
 Port: 8888
+
+#DataSource: root:my-secret-pw@tcp(127.0.0.1:3306)/users

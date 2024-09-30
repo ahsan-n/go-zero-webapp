@@ -1,7 +1,7 @@
 package svc
 
 import (
-	"bazaartechnologies/rating-service/go-zero-webapp/webapp/internal/config"
+	"ahsan-n/go-zero-webapp/webapp/internal/config"
 )
 
 type ServiceContext struct {

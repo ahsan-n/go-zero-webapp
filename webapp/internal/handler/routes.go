@@ -4,7 +4,7 @@ package handler
 import (
 	"net/http"
 
-	"bazaartechnologies/rating-service/go-zero-webapp/webapp/internal/svc"
+	"ahsan-n/go-zero-webapp/webapp/internal/svc"
 
 	"github.com/zeromicro/go-zero/rest"
 )
@@ -14,7 +14,7 @@ func RegisterHandlers(server *rest.Server, serverCtx *svc.ServiceContext) {
 		[]rest.Route{
 			{
 				Method:  http.MethodGet,
-				Path:    "/getUserDetails",
+				Path:    "/getUserDetails/:id",
 				Handler: getUserDetailsHandler(serverCtx),
 			},
 		},

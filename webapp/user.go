@@ -4,9 +4,9 @@ import (
 	"flag"
 	"fmt"
 
-	"bazaartechnologies/rating-service/go-zero-webapp/webapp/internal/config"
-	"bazaartechnologies/rating-service/go-zero-webapp/webapp/internal/handler"
-	"bazaartechnologies/rating-service/go-zero-webapp/webapp/internal/svc"
+	"ahsan-n/go-zero-webapp/webapp/internal/config"
+	"ahsan-n/go-zero-webapp/webapp/internal/handler"
+	"ahsan-n/go-zero-webapp/webapp/internal/svc"
 
 	"github.com/zeromicro/go-zero/core/conf"
 	"github.com/zeromicro/go-zero/rest"

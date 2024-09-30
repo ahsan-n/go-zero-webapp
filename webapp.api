@@ -16,6 +16,9 @@ type UserDetails {
 	CGPA     float64 `json:"cgpa"`
 }
 
+@server (
+	prefix: /v1
+)
 service user-api {
 	@handler getUserDetails
 	get /getUserDetails/:id (Request) returns (UserDetails)

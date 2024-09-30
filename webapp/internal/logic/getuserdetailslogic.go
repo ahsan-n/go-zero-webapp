@@ -42,8 +42,6 @@ func NewGetUserDetailsLogic(ctx context.Context, svcCtx *svc.ServiceContext) *Ge
 
 func (l *GetUserDetailsLogic) GetUserDetails(req types.Request) (resp *types.UserDetails, err error) {
 
-	// todo: add your logic here and delete this line
-
 	m := model.NewUsersModel(conn)
 	user, err := m.FindOne(l.ctx, req.Id)
 	if err != nil {
@@ -54,7 +52,7 @@ func (l *GetUserDetailsLogic) GetUserDetails(req types.Request) (resp *types.Use
 	resp = &types.UserDetails{
 		Name:     user.Name,
 		Age:      user.Age,
-		Semester: int32(user.Semester),
+		Semester: user.Semester,
 		CGPA:     user.Cgpa,
 	}
 

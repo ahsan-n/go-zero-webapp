@@ -18,5 +18,6 @@ func RegisterHandlers(server *rest.Server, serverCtx *svc.ServiceContext) {
 				Handler: getUserDetailsHandler(serverCtx),
 			},
 		},
+		rest.WithPrefix("/v1"),
 	)
 }

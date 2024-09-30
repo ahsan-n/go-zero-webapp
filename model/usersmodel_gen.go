@@ -37,7 +37,7 @@ type (
 		Id       int64   `db:"id"`       // Primary key
 		Name     string  `db:"name"`     // User name
 		Age      int32   `db:"age"`      // User age
-		Semester int64   `db:"semester"` // Current semester
+		Semester int32   `db:"semester"` // Current semester
 		Cgpa     float64 `db:"cgpa"`     // Cumulative Grade Point Average
 	}
 )
